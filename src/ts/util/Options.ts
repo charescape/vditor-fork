@@ -115,7 +115,7 @@ export class Options {
         typewriterMode: false,
         undoDelay: 800,
         upload: {
-            extraData: {},
+            extraData: async () => {return {}},
             fieldName: "file[]",
             filename: (name: string) => name.replace(/\W/g, ""),
             linkToImgUrl: "",

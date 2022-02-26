@@ -195,7 +195,7 @@ const uploadFiles =
 
         const formData = new FormData();
 
-        const extraData = vditor.options.upload.extraData;
+        const extraData = await vditor.options.upload.extraData();
         for (const key of Object.keys(extraData)) {
             formData.append(key, extraData[key]);
         }
