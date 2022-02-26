@@ -195,9 +195,11 @@ const uploadFiles =
 
         const formData = new FormData();
 
-        const extraData = await vditor.options.upload.extraData();
+        const extraData = await vditor.options.upload.extraData(fileList);
         for (const key of Object.keys(extraData)) {
-            formData.append(key, extraData[key]);
+            if (key.indexOf('_') !== 0) {
+                formData.append(key, extraData[key]);
+            }
         }
 
         for (let i = 0, iMax = validateResult.length; i < iMax; i++) {
@@ -205,7 +207,11 @@ const uploadFiles =
         }
 
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", vditor.options.upload.url);
+        if (typeof extraData._fullurl === "string") {
+            xhr.open("POST", extraData._fullurl);
+        } else {
+            xhr.open("POST", vditor.options.upload.url);
+        }
         if (vditor.options.upload.token) {
             xhr.setRequestHeader("X-Upload-Token", vditor.options.upload.token);
         }
