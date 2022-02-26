@@ -22,7 +22,7 @@
     "@babel/core": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
     "@types/diff-match-patch": "^1.0.32",
-    "@types/jest": "^26.0.23",
+    "@types/jest": "^27.4.1",
     "@types/puppeteer": "^2.1.5",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.2",
