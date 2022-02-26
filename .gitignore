@@ -5,6 +5,4 @@
 /node_modules/
 /coverage/
 
-/package-lock.json
-
-/dist/
+/dist/**/*.min.js
