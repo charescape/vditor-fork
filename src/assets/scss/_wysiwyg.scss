@@ -122,7 +122,8 @@
   }
 
   div.vditor-wysiwyg__block:before {
-    content: "</>";
+    // content: "</>";
+    content: "";
   }
 
   div.vditor-wysiwyg__block[data-type="yaml-front-matter"]:before {
