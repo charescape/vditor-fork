@@ -1,6 +1,6 @@
 {
   "name": "@charescape/vditor-fork",
-  "version": "3.8.115",
+  "version": "3.8.116",
   "description": "",
   "author": "Vanessa <v@b3log.org> (http://vanessa.b3log.org)",
   "homepage": "https://b3log.org/vditor",
@@ -66,7 +66,7 @@
     "builddev": "rm -rf dist/ && webpack --config ./webpack.config.js",
     "build": "rm -rf dist/ && cross-env NODE_ENV=production webpack --config ./webpack.config.js",
     "buildall": "rm -rf dist/ && webpack --config ./webpack.config.js && cross-env NODE_ENV=production webpack --config ./webpack.config.js",
-    "do-publish": "npm publish . --access public -dd"
+    "dopub": "npm publish . --access public -dd"
   },
   "keywords": [
     "editor",
