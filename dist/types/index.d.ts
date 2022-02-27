@@ -375,7 +375,7 @@ interface IUpload {
     handler?(files: File[]): string | null | Promise<string> | Promise<null>;
 
     /** 对服务端返回的数据进行转换，以满足内置的数据结构 */
-    format?(files: File[], responseText: string): string;
+    format?(files: File[], responseText: string, extraData: object): string;
 
     /** 对服务端返回的数据进行转换(对应linkToImgUrl)，以满足内置的数据结构 */
     linkToImgFormat?(responseText: string): string;
