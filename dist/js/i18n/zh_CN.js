@@ -39,7 +39,7 @@ window.VditorI18n = {
   'imageURL': '图片地址',
   'indent': '列表缩进',
   'info': '关于',
-  'inline-code': '行内代码',
+  'inline-code': '行内标记',
   'insert-after': '末尾插入行',
   'insert-before': '起始插入行',
   'insertColumnLeft': '在左边插入一列',
