@@ -14,8 +14,8 @@
     "src/assets/*"
   ],
   "dependencies": {
-    "diff-match-patch": "^1.0.5",
-    "@charescape/js-utils": "^1.6.0"
+    "@charescape/js-utils": "^1.6.0",
+    "diff-match-patch": "^1.0.5"
   },
   "types": "dist/index.d.ts",
   "devDependencies": {
@@ -28,6 +28,7 @@
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^6.4.1",
+    "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
     "file-loader": "^4.3.0",
     "html-webpack-plugin": "^5.3.1",
@@ -62,7 +63,9 @@
     "test:watch": "jest --watch",
     "test": "jest --coverage",
     "start": "webpack serve --config webpack.start.js",
-    "build": "webpack",
+    "builddev": "webpack --config ./webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js",
+    "buildall": "@builddev && @build",
     "do-publish": "npm publish . --access public -dd"
   },
   "keywords": [
