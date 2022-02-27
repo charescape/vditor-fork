@@ -79,6 +79,7 @@ export const initUI = (vditor: IVditor) => {
     }
 
     setEditMode(vditor, vditor.options.mode, afterRender(vditor));
+    console.log(`setEditMode(vditor, vditor.options.mode, afterRender(vditor));`, vditor.options.mode);
 
     document.execCommand("DefaultParagraphSeparator", false, "p");
 

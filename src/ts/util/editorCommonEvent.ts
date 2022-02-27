@@ -190,10 +190,13 @@ export const hotkeyEvent = (vditor: IVditor, editorElement: HTMLElement) => {
         if (isCtrl(event) && event.altKey && !event.shiftKey && /^Digit[7-9]$/.test(event.code)) {
             if (event.code === "Digit7") {
                 setEditMode(vditor, "wysiwyg", event);
+                console.log(`event.code === "Digit7"`, `setEditMode(vditor, "wysiwyg", event);`);
             } else if (event.code === "Digit8") {
                 setEditMode(vditor, "ir", event);
+                console.log(`event.code === "Digit8"`, `setEditMode(vditor, "ir", event);`);
             } else if (event.code === "Digit9") {
                 setEditMode(vditor, "sv", event);
+                console.log(`event.code === "Digit9"`, `setEditMode(vditor, "sv", event);`);
             }
             return true;
         }

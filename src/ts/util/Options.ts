@@ -42,7 +42,7 @@ export class Options {
         },
         icon: "ant",
         lang: "zh_CN",
-        mode: "ir",
+        mode: "wysiwyg",
         outline: {
             enable: false,
             position: "left",
