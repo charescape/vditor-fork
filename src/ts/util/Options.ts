@@ -314,9 +314,9 @@ export class Options {
                 hotkey: "⌘M",
                 icon: '<svg><use xlink:href="#vditor-icon-table"></use></svg>',
                 name: "table",
-                prefix: "| col1",
+                prefix: "| ",
                 suffix:
-                    " | col2 | col3 |\n| --- | --- | --- |\n|  |  |  |\n|  |  |  |",
+                    " |  |  |\n| --- | --- | --- |\n|  |  |  |\n|  |  |  |",
                 tipPosition: "n",
             },
             {

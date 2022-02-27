@@ -236,7 +236,7 @@ export const toolbarEvent = (vditor: IVditor, actionBtn: Element, event: Event) 
             useHighlight = false;
             actionBtn.classList.add("vditor-menu--current");
         } else if (commandName === "table") {
-            let tableHTML = `<table data-block="0"><thead><tr><th>col1<wbr></th><th>col2</th><th>col3</th></tr></thead><tbody><tr><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td></tr></tbody></table>`;
+            let tableHTML = `<table data-block="0"><thead><tr><th><wbr></th><th></th><th></th></tr></thead><tbody><tr><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td></tr></tbody></table>`;
             if (range.toString().trim() === "") {
                 if (blockElement && blockElement.innerHTML.trim().replace(Constants.ZWSP, "") === "") {
                     blockElement.outerHTML = tableHTML;
