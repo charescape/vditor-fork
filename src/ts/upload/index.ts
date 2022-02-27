@@ -231,7 +231,7 @@ const uploadFiles =
                     } else {
                         let responseText = xhr.responseText;
                         if (vditor.options.upload.format) {
-                            responseText = vditor.options.upload.format(files as File [], xhr.responseText);
+                            responseText = vditor.options.upload.format(files as File [], xhr.responseText, extraData);
                         }
                         genUploadedLabel(responseText, vditor);
                     }
