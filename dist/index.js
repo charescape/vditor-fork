@@ -1,5 +1,5 @@
 /*!
- * Vditor v3.8.115 - A markdown editor written in TypeScript.
+ * Vditor v3.8.116 - A markdown editor written in TypeScript.
  *
  * MIT License
  *
@@ -2906,7 +2906,7 @@ var Vditor = /** @class */ (function () {
 /* harmony export */   "H": function() { return /* binding */ _VDITOR_VERSION; },
 /* harmony export */   "g": function() { return /* binding */ Constants; }
 /* harmony export */ });
-var _VDITOR_VERSION = "3.8.115";
+var _VDITOR_VERSION = "3.8.116";
 
 var Constants = /** @class */ (function () {
     function Constants() {
@@ -2932,7 +2932,7 @@ var Constants = /** @class */ (function () {
         "swift", "ini", "typescript", "vbnet", "yaml",
         "ada", "clojure", "dart", "erb", "fortran", "gradle", "haskell", "julia", "julia-repl", "lisp", "matlab",
         "pgsql", "powershell", "sql_more", "stata", "cmake", "mathematica"];
-    Constants.CDN = "https://cdn.jsdelivr.net/npm/vditor@" + "3.8.115";
+    Constants.CDN = "https://cdn.jsdelivr.net/npm/@charescape/vditor-fork@" + "3.8.116";
     Constants.MARKDOWN_OPTIONS = {
         autoSpace: false,
         codeBlockPreview: true,
