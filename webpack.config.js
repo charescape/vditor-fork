@@ -16,7 +16,7 @@ const BundleAnalyzerPlugin = require(
 const pkg = require('./package.json')
 const banner = new webpack.BannerPlugin({
   banner: `Vditor v${pkg.version} - A markdown editor written in TypeScript.
-  
+
 MIT License
 
 Copyright (c) 2018-present B3log 开源, b3log.org
@@ -42,6 +42,9 @@ SOFTWARE.
   entryOnly: true,
 })
 
+
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports = [
   {
     mode: 'production',
@@ -56,14 +59,14 @@ module.exports = [
       globalObject: 'this',
     },
     entry: {
-      'index.min': './src/index.ts',
-      'method.min': './src/method.ts',
+      [`index${isProd ? ".min" : ""}`]: './src/index.ts',
+      [`method${isProd ? ".min" : ""}`]: './src/method.ts',
     },
     optimization: {
-      minimize: true,
+      minimize: isProd,
       minimizer: [
         new TerserPlugin({
-          include: ['index.min.js', 'method.min.js'],
+          include: [`index${isProd ? ".min" : ""}.js`, `method${isProd ? ".min" : ""}.js`],
           terserOptions: {
             format: {
               comments: false,
