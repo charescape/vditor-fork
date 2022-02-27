@@ -107,8 +107,9 @@ const genUploadedLabel = (responseText: string, vditor: IVditor) => {
         type = type.toLowerCase();
         if (type.indexOf(".wav") === 0 || type.indexOf(".mp3") === 0 || type.indexOf(".ogg") === 0) {
             if (vditor.currentMode === "wysiwyg") {
-                succFileText += `<div class="vditor-wysiwyg__block" data-type="html-block"
- data-block="0"><pre><code>&lt;audio controls="controls" src="${path}"&gt;&lt;/audio&gt;</code></pre>\n`;
+ //                succFileText += `<div class="vditor-wysiwyg__block" data-type="html-block"
+ // data-block="0"><pre><code>&lt;audio controls="controls" src="${path}"&gt;&lt;/audio&gt;</code></pre>\n`;
+                succFileText += `<audio controls="controls" src="${path}"></audio>\n`;
             } else if (vditor.currentMode === "ir") {
                 succFileText += `<audio controls="controls" src="${path}"></audio>\n`;
             } else {
