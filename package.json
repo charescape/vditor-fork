@@ -1,6 +1,6 @@
 {
   "name": "@charescape/vditor-fork",
-  "version": "3.8.11",
+  "version": "3.8.111",
   "description": "",
   "author": "Vanessa <v@b3log.org> (http://vanessa.b3log.org)",
   "homepage": "https://b3log.org/vditor",
@@ -62,7 +62,8 @@
     "test:watch": "jest --watch",
     "test": "jest --coverage",
     "start": "webpack serve --config webpack.start.js",
-    "build": "webpack"
+    "build": "webpack",
+    "do-publish": "npm publish . --access public -dd"
   },
   "keywords": [
     "editor",
