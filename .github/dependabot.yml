@@ -11,5 +11,5 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    versioning-strategy: "increase"
+    versioning-strategy: "widen"
     open-pull-requests-limit: 50
