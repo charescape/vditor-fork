@@ -148,10 +148,10 @@ module.exports = [
     },
     plugins: [
       // new BundleAnalyzerPlugin(),
-      new CleanWebpackPlugin({
-        cleanOnceBeforeBuildPatterns: [
-          path.join(__dirname, 'dist')],
-      }),
+      // new CleanWebpackPlugin({
+      //   cleanOnceBeforeBuildPatterns: [
+      //     path.join(__dirname, 'dist')],
+      // }),
       new webpack.DefinePlugin({
         VDITOR_VERSION: JSON.stringify(pkg.version),
       }),
