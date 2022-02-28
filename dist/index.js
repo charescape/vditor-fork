@@ -1,5 +1,5 @@
 /*!
- * Vditor v3.8.116 - A markdown editor written in TypeScript.
+ * Vditor v3.8.117 - A markdown editor written in TypeScript.
  *
  * MIT License
  *
@@ -2906,7 +2906,7 @@ var Vditor = /** @class */ (function () {
 /* harmony export */   "H": function() { return /* binding */ _VDITOR_VERSION; },
 /* harmony export */   "g": function() { return /* binding */ Constants; }
 /* harmony export */ });
-var _VDITOR_VERSION = "3.8.116";
+var _VDITOR_VERSION = "3.8.117";
 
 var Constants = /** @class */ (function () {
     function Constants() {
@@ -2932,7 +2932,7 @@ var Constants = /** @class */ (function () {
         "swift", "ini", "typescript", "vbnet", "yaml",
         "ada", "clojure", "dart", "erb", "fortran", "gradle", "haskell", "julia", "julia-repl", "lisp", "matlab",
         "pgsql", "powershell", "sql_more", "stata", "cmake", "mathematica"];
-    Constants.CDN = "https://cdn.jsdelivr.net/npm/@charescape/vditor-fork@" + "3.8.116";
+    Constants.CDN = "https://cdn.jsdelivr.net/npm/@charescape/vditor-fork@" + "3.8.117";
     Constants.MARKDOWN_OPTIONS = {
         autoSpace: false,
         codeBlockPreview: true,
@@ -8314,7 +8314,7 @@ var toolbarEvent = function (vditor, actionBtn, event) {
             actionBtn.classList.add("vditor-menu--current");
         }
         else if (commandName === "table") {
-            var tableHTML_1 = "<table data-block=\"0\"><thead><tr><th>col1<wbr></th><th>col2</th><th>col3</th></tr></thead><tbody><tr><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td></tr></tbody></table>";
+            var tableHTML_1 = "<table data-block=\"0\"><thead><tr><th><wbr></th><th></th><th></th></tr></thead><tbody><tr><td> </td><td> </td><td> </td></tr><tr><td> </td><td> </td><td> </td></tr></tbody></table>";
             if (range.toString().trim() === "") {
                 if (blockElement && blockElement.innerHTML.trim().replace(constants/* Constants.ZWSP */.g.ZWSP, "") === "") {
                     blockElement.outerHTML = tableHTML_1;
@@ -14451,8 +14451,8 @@ var Options = /** @class */ (function () {
                 hotkey: "⌘M",
                 icon: '<svg><use xlink:href="#vditor-icon-table"></use></svg>',
                 name: "table",
-                prefix: "| col1",
-                suffix: " | col2 | col3 |\n| --- | --- | --- |\n|  |  |  |\n|  |  |  |",
+                prefix: "| ",
+                suffix: " |  |  |\n| --- | --- | --- |\n|  |  |  |\n|  |  |  |",
                 tipPosition: "n",
             },
             {
